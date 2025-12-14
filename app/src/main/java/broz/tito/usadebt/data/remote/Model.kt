@@ -44,6 +44,7 @@ class Model @Inject constructor(
             }
         }
         catch (e: Exception) {
+            Log.d(TAG, "getDebt: $e")
             result = FailureDebtResult()
         }
         emit(result)
